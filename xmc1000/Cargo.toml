@@ -1,0 +1,20 @@
+[package]
+name = "xmc1000"
+version = "0.1.0"
+authors = ["Ben Harris <mail@bharr.is>"]
+keywords = ["no-std", "arm", "cortex-m", "xmc1000"]
+repository = "https://github.com/m9s/xmc1000"
+
+[lib]
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.0"
+
+[features]
+rt = ["cortex-m-rt/device"]

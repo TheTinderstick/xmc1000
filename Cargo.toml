@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "xmc1000",
+    "xmc1000-hal",
+    "xmc13-boot-example",
+]
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = true
+
+[replace]
+"xmc1000:0.1.0" = { path = "xmc1000" }
+"xmc1000_hal:0.1.0" = { path = "xmc1000-hal" }
