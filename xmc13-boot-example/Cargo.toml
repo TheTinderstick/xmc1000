@@ -23,6 +23,7 @@ repository = "https://github.com/japaric/cortex-m-quickstart"
 [dependencies]
 r0 = "0.2.2"
 panic-abort = "0.2.0"
+xmc1000-hal = { path = "../xmc1000-hal" }
 [dependencies.cortex-m]
 version = "0.5.0"
 

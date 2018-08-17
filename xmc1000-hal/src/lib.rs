@@ -9,4 +9,5 @@ extern crate nb;
 pub extern crate xmc1000;
 extern crate void;
 
+pub mod prelude;
 pub mod gpio;
